@@ -1,9 +1,9 @@
 # coding:utf-8
 
-import urllib2
+import urllib.request
 
-req = urllib2.Request("http://www.baidu.com")
-response = urllib2.urlopen(req)
+req = urllib.request.Request("http://www.baidu.com")
+response = urllib.request.urlopen(req)
 fp = open("D://main1.html", "w+")
 fp.write(response.read())
 fp.close()
