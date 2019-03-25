@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
 
 data = []
-with open('../week1/1_2/1_2code_of_video/web/new_index.html', 'r') as web_data:
+path = './1_2/web/new_index.html'
+with open(path, 'r') as web_data:
     Soup = BeautifulSoup(web_data, 'lxml')
     titles = Soup.select('ul > li > div.article-info > h3 > a')
     images = Soup.select('ul > li > img')
