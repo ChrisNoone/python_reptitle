@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 data = []
-path = './1_2/web/new_index.html'
+path = './web/new_index.html'
 with open(path, 'r') as web_data:
     Soup = BeautifulSoup(web_data, 'lxml')
     titles = Soup.select('ul > li > div.article-info > h3 > a')
