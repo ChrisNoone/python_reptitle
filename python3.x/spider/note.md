@@ -61,3 +61,6 @@
                 - Content-Length: 数据长度
                 - 简而言之，一旦更改请求方法，请注意其它请求头部信息相适应
             - urllib.parse.urlencode可以将字符串自动转换成上面的
+    - request.urlopen()
+        - 可以传入url和data
+        - 也可以传入一个Request类实例，构造类实例则可以传入url、data、headers等
