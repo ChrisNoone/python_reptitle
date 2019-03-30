@@ -64,3 +64,16 @@
     - request.urlopen()
         - 可以传入url和data
         - 也可以传入一个Request类实例，构造类实例则可以传入url、data、headers等
+        
+- urllib.error
+    - URLError产生的原因：
+        - 没网
+        - 服务器连接失败
+        - 找不到指定服务器
+        - 是OSError的子类
+    - HTTPError，是URLError的一个子类
+    - 两者区别：
+         - HTTPError是对应的HTTP请求的返回码错误，如果返回错误码是400以上的，则会引发HTTPError
+         - URLError对应的一般是网络出现问题，包括url问题
+         - 关系区别：OSError - URLError - HTTPError
+         
