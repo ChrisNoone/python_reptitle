@@ -76,4 +76,22 @@
          - HTTPError是对应的HTTP请求的返回码错误，如果返回错误码是400以上的，则会引发HTTPError
          - URLError对应的一般是网络出现问题，包括url问题
          - 关系区别：OSError - URLError - HTTPError
-         
+
+- UserAgent
+    - 用户代理，简称UA，属于headers的一部分，服务器通过UA判断访问者身份
+    - 添加方式有两种：headers 或 add_header()方法
+    
+- ProxyHander处理（代理服务器）
+    - 使用代理ip，是爬虫的重要手段
+    - 获取代理服务器的地址：
+        - www.xicidaili.com
+        - www.goubanjia.com
+    - 代理用来隐藏真是访问，代理也不允许频繁访问某一个固定网站，所以代理一定要很多很多
+    - 基本使用步骤：
+        - 1.设置代理地址
+        - 2.创建ProxyHandler
+        - 3.创建Opener
+        - 4.安装Opener
+ 
+ - cookie & session
+    - 
