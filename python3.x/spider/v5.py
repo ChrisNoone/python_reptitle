@@ -22,8 +22,8 @@ def login():
     """
     url = 'https://login.taobao.com/member/login'
     data = {
-        'TPL_username_1': '981400112@qq.com',
-        'TPL_password_1': 'Lv8023_Alibaba'
+        'TPL_username_1': '',
+        'TPL_password_1': ''
     }
     data = parse.urlencode(data)
     seq = request.Request(url, data=data.encode())
