@@ -6,6 +6,8 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 
-class TutorialPipeline(object):
+class MoviePipeline(object):
     def process_item(self, item, spider):
-        return item
+        with open('my_meiju.txt', 'a') as fp:
+            fp.write(item['name'] + '\n')
+        fp.close()
