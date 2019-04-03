@@ -1,12 +1,10 @@
 # coding: utf-8
 
-from urllib import request,parse
-import json
+from urllib import request
 
-base_url = 'https://fusion.spmobileapi.net/api/General/captcha'
+base_url = 'https://www.zhihu.com/topics'
 
-req = request.Request(base_url, data={}, headers={})
+req = request.Request(base_url, method='GET')
 rsp = request.urlopen(req)
-json_data = rsp.read().decode('utf-8')
-json_data = json.loads(json_data)
-print(json_data['data'])
+html = rsp.read().decode('utf-8')
+print(html)

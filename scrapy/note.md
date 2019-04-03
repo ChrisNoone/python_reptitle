@@ -37,6 +37,14 @@
 - 解析出的是链接（URL）,则把URL交给调度器等待抓取
 
 
+### 写代码
+- 创建工程
+    - 命令行：scrapy startproject projectName
+- 文件操作
+    - os.path
+    - file
+
+
 ### 参考
 - https://www.cnblogs.com/kongzhagen/p/6549053.html
 - https://www.cnblogs.com/llssx/p/8378832.html

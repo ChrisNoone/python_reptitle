@@ -1,7 +1,6 @@
 # coding: utf-8
 
 import scrapy
-
 from movie.items import MovieItem
 
 
