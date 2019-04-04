@@ -38,8 +38,13 @@
 
 
 ### 写代码
-- 创建工程
-    - 命令行：scrapy startproject projectName
+- 命令行工具
+    - 参考地址
+        - http://wiki.jikexueyuan.com/project/scrapy/command-line-tools.html
+    - 新建项目
+        - scrapy startproject projectName
+    - 新建spider
+        - scrapy genspider spiderName
 - 文件操作
     - os.path
     - file
