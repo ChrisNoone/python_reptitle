@@ -13,9 +13,12 @@ class ZhihutopicSpider(scrapy.Spider):
     def parse(self, response):
         topics = response.xpath('//div[@class="zh-general-list clearfix"]/div')
         for each_topic in topics:
-            print(item)
             item = ZhihutopicItem()
-            item['name'] = each_topic.xpath('./div/div/a[1]/img').text
-            item['dec'] = each_topic.xpath('./div/div/p').text
-            # print(item['name'])
+            item['name'] = each_topic.xpath('./div/a[1]/strong/text()').extract()[0]
+            if len(each_topic.xpath('./div/p/text()').extract()) != 0:
+                item['cate'] = each_topic.xpath('./div/p/text()').extract()[0]
+            elif len(each_topic.xpath('./div/strong/text()').extract()) != 0:
+                item['cate'] = each_topic.xpath('./div/strong/text()').extract()[0]
+            else:
+                item['cate'] = ''
             yield item
