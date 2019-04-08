@@ -119,3 +119,8 @@
     - python3.x 使用pymysql模块连接mysql数据库
     - execute(sql)方法一次只能接收一条语句并执行，executemany(templet, args)方法可同时接收多条语句并执行，args接收一个元祖列表
     - 字典转元祖，tuple(dict.values())是将字典的values放到一个元祖中
+- ./beautifulsoup/github.py 编写笔记
+    - cookies = rsp.cookies.get_dict() 提取返回结果中的cookies
+    - 使用BeautifulSoup处理的，是返回的Response对象的.text
+        - html = BeautifulSoup(rsp.text, 'lxml')
+    - requests的get()方法或者post()方法，请求参数中加url、params、headers、cookies等参数
