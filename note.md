@@ -110,4 +110,12 @@
     - SSL证书就是指遵守SSL安全套阶层协议的服务器数字证书（SercureSocketLayer）
     - 由美国网景公司开发
     - CA（CertificateAuthority）是数字证书认证中心，是发放、管理、废除数字证书的收信人的第三方机构
-            
+
+## 4.其它
+- ./beautifulsoup/chouti.py 编写笔记
+    - beautifulsoup对象的find()和find_all()方法使用
+    - find()和find_all()还可以嵌套使用
+    - string对象的replace()方法，替换字符
+    - python3.x 使用pymysql模块连接mysql数据库
+    - execute(sql)方法一次只能接收一条语句并执行，executemany(templet, args)方法可同时接收多条语句并执行，args接收一个元祖列表
+    - 字典转元祖，tuple(dict.values())是将字典的values放到一个元祖中
