@@ -124,3 +124,7 @@
     - 使用BeautifulSoup处理的，是返回的Response对象的.text
         - html = BeautifulSoup(rsp.text, 'lxml')
     - requests的get()方法或者post()方法，请求参数中加url、params、headers、cookies等参数
+- 字符编码
+    - https://juejin.im/post/5ca57998f265da308d50c61a?utm_source=tuicool&utm_medium=referral
+    - Python3解释器默认使用UTF-8编码来读 Python2解释器默认使用ASCII来读
+    - 在Python3中所有的字符串都是用unicode编码来保存（不需要前面加“u”），字符串的数据类型也只有一个，就是str，只要是用unicode来保存的，那么所有的字符串在任何情况下都不会出现乱码
