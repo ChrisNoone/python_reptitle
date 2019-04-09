@@ -24,8 +24,8 @@ class ZhihuAccount(object):
             'client_id': 'c3cef7c66a1843f8b3a9e6a1e3160e20',
             'grant_type': 'password',
             'source': 'com.zhihu.web',
-            'username': '',
-            'password': '',
+            'username': '17127290867',
+            'password': 'asd112233',
             'lang': 'en',
             'ref_source': 'homepage',
             'utm_source': ''
