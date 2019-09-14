@@ -8,7 +8,7 @@ base_url = 'https://wh.fang.lianjia.com/loupan/pg'
 
 
 # 传入地址，取出本页数据
-def get_data(url):    
+def get_data(url):
     web_data = requests.get(url)
     Soup = BeautifulSoup(web_data.text, 'lxml')
     names = Soup.select('ul.resblock-list-wrapper > li > div > div.resblock-name > a')
@@ -19,7 +19,7 @@ def get_data(url):
     status = Soup.select('ul.resblock-list-wrapper > li > div > div.resblock-name > span.sale-status')
     cates = Soup.select('ul.resblock-list-wrapper > li > div > div.resblock-tag')
 
-    for name, pic, addr, price, type, statu, cate in zip(names,pics, addrs, prices, types, status, cates):
+    for name, pic, addr, price, type, statu, cate in zip(names, pics, addrs, prices, types, status, cates):
         info = {
             'name': name.get_text(),
             'pic': pic.get('src'),
